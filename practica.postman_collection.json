@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "f20acb29-485d-4d8c-8e2d-c518053c3277",
+		"name": "practica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/books",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insertar",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"El hoyo\",\r\n    \"precio\" : 25.6,\r\n    \"author\" : \"Frank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/books",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/books/1",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"El hoyo\",\r\n    \"precio\": 28.6,\r\n    \"author\": \"Frank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/books/1",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/books/1",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"books",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokemon api de pokeApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1302",
+					"protocol": "https",
+					"host": [
+						"pokeapi",
+						"co"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pokemon",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "1302"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "pokemonApi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://practica-demo-328815ac93a7.herokuapp.com/pokemon",
+					"protocol": "https",
+					"host": [
+						"practica-demo-328815ac93a7",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"pokemon"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
